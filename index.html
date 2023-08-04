@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botani</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <script defer src="./js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>
+        <a href="#"><img src="./src/logo1.svg" alt="반려식물 웹사이트 보타니"></a>
+      </h1>
+      <ul id="nav">
+        <li><a href="#">식물 찾기</a></li>
+        <li><a href="#">나의 식물</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">회원가입</a></li>
+        <div class="search">
+          <input type="text" />
+          <span class="material-icons" href="javascript:void(0)">search</span>
+        </div>
+      </ul>
+    </div>
+
+    <div id="container">
+      <div class="content_wrap1">
+        <div class="visual">
+          <!-- 커버 -->
+          <div id="cover">
+            <a href="https://www.hani.co.kr/arti/animalpeople/companion_animal/814838.html"><img src="/src/colum1.png"
+                alt="식물 옆에 고양이가 있는 사진"></a>
+            <label class="summary" for="cover">
+              <h1> 오늘의 칼럼</h1>
+              <br>
+              <h2>반려동물 함께하는 식물</h2>
+              <p>최근 식물을 활용해 인테리어를 연출하는 일명 ‘플랜테리어(플랜트+인테리어)’가 유행하고 있다. 플랜테리어는 미세먼지 등 공해문제가 기승하는 도심에서 벗어나 실내에서 정화된 공기를 마시고
+                자연친화적인 분위기를 얻는다는 장점이 있다.그러나 반려동물을 키우는 사람이 플랜테리어를 선뜻 실행하기는 쉽지 않다. 일부 식물은 반려동물에게 위험한 성분을 가지고 있기 때문이다. 개나
+                고양이가 독성식물을 섭취하면 구토, 설사, 복통, 염증, 식욕부진을 비롯해 심하게는 생명에 타격을 줄 수 있으므로 식물 선택에 있어 유의해야 한다. 예쁘기도 하면서 반려동물에게 안전하기도
+                한 식물들에는 어떤 것들이 있을까? 반려동물과 상생할 수 있는 ‘착한 플랜테리어 전용 식물’을 알아보자.
+              </p>
+            </label>
+          </div>
+
+          <div class="visual2">
+            <div id="cover2">
+              <a href="javascrit:void(0)"><img src="./src/cover2.jpeg" alt="화분이 천장에 걸려있는 사진"></a>
+              <label class="summary2" for="cover2">
+                <h3>행잉식물에 대해 알아보자</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tenetur in amet rem veritatis dolorem
+                  hic placeat aut cumque excepturi omnis accusantium suscipit nemo reprehenderit enim expedita est nobis
+                  eos.
+                  Omnis illo nemo ratione eligendi? Vero mollitia maxime iure ipsa veniam corrupti, temporibus
+                  perferendis suscipit deserunt dignissimos dolores soluta fuga voluptates repellat inventore
+                  exercitationem, hic consequatur nostrum ipsam aspernatur sed!</p>
+              </label>
+            </div>
+
+            <div id="cover3">
+              <a href="javascript:void(0)"><img src="./src/cover3.jpeg" alt=""></a>
+              <label for="cover3" class="summary2">
+                <h3>응애 물리치기</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, iste! Odio, quod. Libero officia est
+                  beatae harum veniam suscipit iusto, culpa numquam nihil sequi, earum mollitia necessitatibus
+                  voluptatem iure architecto?
+                  Iure vero excepturi ipsum adipisci ullam dignissimos quod nesciunt, tempore soluta? Tempore quibusdam
+                  quidem aperiam, ad temporibus saepe! Explicabo, sed! Exercitationem voluptatum adipisci sequi aperiam
+                  nostrum et iste quibusdam id!</p>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual3">
+          <h1>이 시간 인기 식물</h1>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/popular_1.jpeg" alt="">
+                <a href="javascript(0)">몬스테라</a>
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/popular_2.jpeg" alt="">
+                <a href="javascript(0)">퓨전화이트</a>
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/popular_3.jpeg" alt="">
+                <a href="javascript(0)">베고니아</a>
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/popular_4.jpeg" alt="">
+                <a href="javascript(0)">라넌큘러스</a>
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/popular_1.jpeg" alt="">
+                <a href="javascript(0)">스킨답서스</a>
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/popular_1.jpeg" alt="">
+                <a href="javascript(0)">plant name6</a>
+              </div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+    </div>
+  </div>
+</body>
+
+</html>
