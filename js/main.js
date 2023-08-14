@@ -1,13 +1,7 @@
-
-var Swiper = new Swiper(".swiper-container", {
-  slidesPerView: 5,
-  spaceBetween: 18,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+var swiper = new Swiper(".mySwiper", {
+  watchSlidesProgress: true,
+  slidesPerView: 3,
+  spaceBetween: 50,
+  autoplay: true,
   loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-  },
-},
 });
