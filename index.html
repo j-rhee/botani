@@ -35,11 +35,16 @@
     <!-- header -->
     <div id="header">
       <h1>
-        <a href="#"><img src="./src/logo1.svg" alt="반려식물 웹사이트 보타니"></a>
+        <a href="#"><img src="./src/logo1.svg" alt="반려식물 웹사이트 보타니" class="logo"></a>
       </h1>
 
       <!-- navigation -->
       <ul id="nav">
+        <div class="btn-menu">
+          <span class="material-symbols-outlined">
+            menu
+          </span>
+        </div>
         <li><a href="#">식물 찾기</a></li>
         <li><a href="#">나의 식물</a></li>
         <li><a href="#">커뮤니티</a></li>
@@ -78,7 +83,7 @@
                 alt="식물 옆에 고양이가 있는 사진">
             </a>
             <label class="summary" for="cover">
-              <h1> 오늘의 칼럼</h1>
+              <h1>오늘의 칼럼</h1>
               <br>
               <h2>반려동물과 함께해요</h2>
               <p>최근 식물을 활용해 인테리어를 연출하는 일명 ‘플랜테리어(플랜트+인테리어)’가 유행하고 있다. 플랜테리어는 미세먼지 등 공해문제가 기승하는 도심에서 벗어나 실내에서 정화된 공기를 마시고
@@ -167,9 +172,9 @@
                   <div class="card">
                     <span>스투키 물주기</span>
                     <div class="title">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ratione voluptatibus sit
-                        esse molestias aut tempora! Quod accusamus at autem id voluptatibus repudiandae quos! Ducimus
-                        quis ipsam libero dolorem animi.</p>
+                      <p>반려식물로 가장 무난한 게 물을 자주 주지 않아도 되는 스투키인데요!
+                        오늘은 스투기 관수 주기에 대해서 알아보도록 하겠습니다. 1. 화분 무게로 비교하기 2. 스투키 끝부분 눌러보기 두 가지 방법이 크게 있어요! 첫번짼 스투키가 흙의 물을 빨아들이면 화분이 가벼워짐으로서
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -177,11 +182,13 @@
               <ul class="popular_post">
                 <li>
                   <div class="card2">
-                    <span>스투키 물주기</span>
+                    <span>총채 벌레 잡는 법</span>
                     <div class="title">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ratione voluptatibus sit
-                        esse molestias aut tempora! Quod accusamus at autem id voluptatibus repudiandae quos! Ducimus
-                        quis ipsam libero dolorem animi.</p>
+                      <p>총채벌레 완전 박멸하는 법!
+                        맨 첫번째로 해야할 행동은 화분 격리입니다.
+                        총채 벌레가 붙어있는 잎이나 꽃은 빨리 잘라서 버려주세요(소각 추천)
+                        그 다음에 모종삽으로 겉흙을 퍼서 버립니다.
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -189,11 +196,12 @@
               <ul class="popular_post">
                 <li>
                   <div class="card2">
-                    <span>스투키 물주기</span>
+                    <span>이거 톡토기인가요?</span>
                     <div class="title">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ratione voluptatibus sit
-                        esse molestias aut tempora! Quod accusamus at autem id voluptatibus repudiandae quos! Ducimus
-                        quis ipsam libero dolorem animi.</p>
+                      <p>1mm도 안 될 것 같은 작은 벌레가
+                        화분에서 물 줄 때마다 나왔다가 들어가는데
+                        톡토기인지 봐주세요.
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -204,46 +212,43 @@
 
           <!-- 지난 칼럼 -->
           <div class="column">
-            <h1>지난 칼럼</h1>
+            <h1>지난 칼럼</h1> <br>
             <div class="column_container">
               <div class="column_cover">
                 <img src="./src/board1.jpeg" alt="">
-                <div class="column_hover">
-                  <div class="column_caption">
-                    <a href="javascript:void(0)">바로가기</a>
-                  </div>
+                <div class="hover_text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="javascript:void(0)">바로가기</a>
                 </div>
               </div>
               <div class="column_cover">
                 <img src="./src/board2.jpeg" alt="">
-                <div class="column_hover">
-                  <div class="column_caption">
-                    <a href="javascript:void(0)">바로가기</a>
-                  </div>
+                <div class="hover_text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="javascript:void(0)">바로가기</a>
                 </div>
+
               </div>
               <div class="column_cover">
                 <img src="./src/board3.jpeg" alt="">
-                <div class="column_hover">
-                  <div class="column_caption">
-                    <a href="javascript:void(0)">바로가기</a>
-                  </div>
+                <div class="hover_text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="javascript:void(0)">바로가기</a>
                 </div>
               </div>
               <div class="column_cover">
                 <img src="./src/board4.jpeg" alt="">
-                <div class="column_hover">
-                  <div class="column_caption">
-                    <!-- <a href="javascript:void(0)">바로가기</a> -->
-                  </div>
+                <div class="hover_text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="javascript:void(0)">바로가기</a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div id="footer">
   </div>
