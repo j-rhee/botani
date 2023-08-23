@@ -4,9 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The Open Graph Protocal -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Botani" />
+  <meta property="og:title" content="Botani Landing" />
+  <meta property="og:description" content="보타니는 반려식물 식집사들을 위한 커뮤니티입니다." />
+  <meta property="og:image" content="./src/logo2.png" />
+  <meta property="og:url" content="https://snazzy-conkies-ae5b3d.netlify.app/" />
+  <!-- Twitter Cards -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Botani" />
+  <meta property="twitter:title" content="Botani Landing" />
+  <meta property="twitter:description" content="타니는 반려식물 식집사들을 위한 커뮤니티입니다." />
+  <meta property="twitter:image" content="./src/logo2.png" />
+  <meta property="twitter:url" content="https://snazzy-conkies-ae5b3d.netlify.app/F" />
   <title>Botani</title>
+  <!-- css -->
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css" />
+  <!-- google API -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -14,10 +30,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
     rel="stylesheet">
+  <!-- js -->
   <script defer src="./js/main.js"></script>
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+  <!-- bootstrap -->
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jquery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
   <!-- cloudflare -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
     integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
@@ -34,21 +54,14 @@
   <div id="wrap">
     <!-- header -->
     <div id="header">
-      <h1>
-        <a href="#"><img src="./src/logo1.svg" alt="반려식물 웹사이트 보타니" class="logo"></a>
-      </h1>
+      <a href="#"><img src="./src/logo1.svg" alt="반려식물 웹사이트 보타니입니다." class="logo"></a>
 
       <!-- navigation -->
-      <ul id="nav">
-        <div class="btn-menu">
-          <span class="material-symbols-outlined">
-            menu
-          </span>
-        </div>
+      <ul id="nav" class="nav">
         <li><a href="#">식물 찾기</a></li>
         <li><a href="#">나의 식물</a></li>
         <li><a href="#">커뮤니티</a></li>
-        <li><a href="#">회원가입</a></li>
+        <li><a href="#">쇼핑하기</a></li>
         <div class="search">
           <input type="text" />
           <span class="material-icons" href="javascript:void(0)">search</span>
@@ -61,10 +74,10 @@
         <section class="bg">
           <div class="bg_main">
             <div class="bg_layer">
-              <img src="./src/mainImg.jpg" alt="식물이 많은 테라스 사진">
-              <div class="page_inner">
-                <span>tend your life</span>
-                <div class="btn">
+              <img src="./src/mainImg.jpg" alt="식물이 많은 테라스 사진" id="bg_img">
+              <div class="page_inner fade_in">
+                <span class="title">tend your life</span>
+                <div class="btn waviy">
                   <a href="javascript:volid(0)">shop now</a>
                 </div>
               </div>
@@ -75,7 +88,7 @@
     </main>
     <div id="container">
       <div class="content_wrap1">
-        <div class="visual">
+        <div class="visual fade">
           <!-- 칼럼1 -->
           <!-- 커버1 -->
           <div id="cover">
@@ -121,7 +134,7 @@
         </div>
 
         <!-- 메인 하단 -->
-        <div class="visual3">
+        <div class="visual3 fade">
           <h1>이 시간 인기 식물</h1>
           <br>
           <div class="swiper mySwiper">
@@ -164,7 +177,7 @@
         <div class="content_wrap2">
 
           <!-- 인기 글 -->
-          <div class="board">
+          <div class="board fade">
             <h1>실시간 인기 글</h1>
             <div class="popular_container">
               <ul class="popular_post">
@@ -173,7 +186,12 @@
                     <span>스투키 물주기</span>
                     <div class="title">
                       <p>반려식물로 가장 무난한 게 물을 자주 주지 않아도 되는 스투키인데요!
-                        오늘은 스투기 관수 주기에 대해서 알아보도록 하겠습니다. 1. 화분 무게로 비교하기 2. 스투키 끝부분 눌러보기 두 가지 방법이 크게 있어요! 첫번짼 스투키가 흙의 물을 빨아들이면 화분이 가벼워짐으로서
+                        오늘은 스투기 관수 주기에 대해서 알아보도록 하겠습니다.
+                        1. 화분 무게로 비교하기
+                        2. 스투키 끝부분 눌러보기 두 가지 방법이 크게 있어요!
+                        첫번짼 스투키가 흙의 물을 빨아들이면 화분이 가벼워짐으로서 관수 주기를 알아내는 것이고,
+                        두번째는 스투키의 머리 부분을 눌러보면 말랑할 때가 있어요. 그게 안에 물이 없어서 그런 겁니다.
+                        물을 준 후에 시간이 지나고 다시 눌러보면 다시 단단해집니다.
                       </p>
                     </div>
                   </div>
@@ -211,20 +229,20 @@
           </div>
 
           <!-- 지난 칼럼 -->
-          <div class="column">
+          <div class="column fade">
             <h1>지난 칼럼</h1> <br>
             <div class="column_container">
               <div class="column_cover">
                 <img src="./src/board1.jpeg" alt="">
                 <div class="hover_text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p>월동 준비하기</p><br>
                   <a href="javascript:void(0)">바로가기</a>
                 </div>
               </div>
               <div class="column_cover">
                 <img src="./src/board2.jpeg" alt="">
                 <div class="hover_text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p>새싹 발아를 해보자</p><br>
                   <a href="javascript:void(0)">바로가기</a>
                 </div>
 
@@ -232,14 +250,21 @@
               <div class="column_cover">
                 <img src="./src/board3.jpeg" alt="">
                 <div class="hover_text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p>포인세티아의 진실</p><br>
                   <a href="javascript:void(0)">바로가기</a>
                 </div>
               </div>
               <div class="column_cover">
                 <img src="./src/board4.jpeg" alt="">
                 <div class="hover_text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p>셀렘에 대해 알아보자</p><br>
+                  <a href="javascript:void(0)">바로가기</a>
+                </div>
+              </div>
+              <div class="column_cover">
+                <img src="./src/board5.jpeg" alt="">
+                <div class="hover_text">
+                  <p>수경재배로 뿌리 내기</p><br>
                   <a href="javascript:void(0)">바로가기</a>
                 </div>
               </div>
@@ -249,10 +274,31 @@
       </div>
     </div>
   </div>
-  </div>
-  <div id="footer">
-  </div>
-  </div>
 </body>
-
+<footer>
+  <div class="inner fade">
+    <ul class="menu">
+      <li>
+        <a href="javascript:void(0)" class="orange">개인정보처리방침</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a>
+      </li>
+      <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+      <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+      <li><a href="javascript:void(0)">카드 이용약관</a></li>
+      <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+    </ul>
+    <div class="info">
+      <span>사업자등록번호 123-45-678901</span>
+      <span>Botani</span>
+      <span>TEL: 02) 1234-5678 / FAX: 02) 1234-5678</span>
+      <span>개인정보 책임자: 이연재?</span>
+    </div>
+    <p class="copyright">
+      &copy; <span class="this-year"></span>
+      Botani. All Rights Reserved.
+    </p>
+  </div>
+</footer>
 </html>
