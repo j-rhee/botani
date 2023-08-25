@@ -75,6 +75,7 @@ h6 {
 html {
   background-color: #F8F7F7;
 }
+
 #wrap #header {
   width: 200px;
   background: #3D5618;
@@ -105,11 +106,17 @@ html {
 #header ul li a {
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Eulyoo1945', serif;
+  font-family: 'orbit', sans-serif;
   line-height: 2;
   position: relative;
   display: inline-block;
+  opacity: .8;
 }
+
+#header ul li a:hover {
+  opacity: 1;
+}
+
 #header ul li a:before {
   content: '';
   position: absolute;
@@ -122,6 +129,7 @@ html {
   z-index: -1;
   transition: all 0.3s;
 }
+
 #header ul li a:hover::before {
   opacity: .4;
   width: 100%;
@@ -151,6 +159,10 @@ html {
 
 /* main bg
 ================================== */
+main {
+  margin-left: 200px;
+}
+
 .bg {
   position: relative;
   margin: 0 auto;
@@ -176,12 +188,12 @@ html {
 
 .bg_layer .page_inner span {
   position: absolute;
-  font-family: sans-serif;
+  font-family: 'Great Vibe', cursive;
   font-size: 90px;
   color: #F8F7F7;
   margin: 0 auto;
   left: 50%;
-  top: 35%;
+  top: 30%;
   padding: 1rem;
   text-shadow: 0px 3px 3px #333;
 }
@@ -200,12 +212,18 @@ html {
   margin: 1rem;
   text-align: center;
   align-items: center;
+  background-color: transparent;
 }
 
 .page_inner .btn:hover {
   color: #3D5618;
   background-color: #F8F7F7;
   transition: .3s;
+
+}
+
+.page_inner .btn:hover a {
+  font-family: 'Great Vibe', cursive;
 }
 
 .page_inner .btn a {
@@ -221,14 +239,14 @@ html {
 .fade_in {
   opacity: 1;
   -webkit-animation-name: fadeInOpacity;
-          animation-name: fadeInOpacity;
-  -webkit-animation-iteration-count: 1; 
-          animation-iteration-count: 1;
+  animation-name: fadeInOpacity;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-duration: 1.5s;        
-          animation-duration: 1.5s;
-} 
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
 
 @keyframes fadeInOpacity {
   0% {
@@ -243,7 +261,8 @@ html {
     opacity: 1;
   }
 }
-.waviy:hover{
+
+.waviy:hover {
   transition: .8s;
   transform-style: preserve-3d;
   transform: rotateX(360deg);
@@ -256,14 +275,14 @@ html {
   margin: auto;
   padding: 3rem;
   overflow: hidden;
-  
+
 }
 
 #container .content_wrap1 {
   height: 100%;
   display: inline-flex;
   flex-direction: column;
-  
+
 }
 
 #container #cover,
@@ -347,7 +366,6 @@ p {
 
 .visual2 #cover3 {
   margin-top: 1.5rem;
-  width: 600px;
   height: 170px;
 }
 
@@ -522,9 +540,9 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
+  border-radius: 10px;
   background: rgba(0, 0, 0, 0.3);
   z-index: 10;
-  border-radius: 10px;
 }
 
 .hover_text {
@@ -550,11 +568,13 @@ p {
   text-align: center;
   margin-bottom: 1rem;
 }
-.hover_text  a{
+
+.hover_text a {
   padding: 10px;
   border: 1.5px solid #F8F7F7;
   background-color: transparent;
 }
+
 .column_cover:hover img {
   transform: scale(1.1);
   transition: .8s;
@@ -566,22 +586,112 @@ p {
   width: 14vw;
 }
 
+/* shop */
+#shop {
+  margin-top: 5rem;
+}
 
-/* FOOTER */
+#shop>h1 {
+  text-align: center;
+  line-height: 1.2em;
+  display: flex;
+  text-transform: uppercase;
+  transition-property: transform;
+  transition: 0.25s ease;
+  flex-direction: column;
+  align-items: center;
+}
+
+#shop>h1::after {
+  content: '';
+  border-top: 2px solid #3D5618;
+  top: 10px;
+  width: 210px;
+  position: relative;
+  display: block;
+  transform: rotateY(90deg);
+  transition: transform 0.25s linear;
+}
+
+#shop>h1:hover {
+  transform: scale(1);
+}
+
+#shop>h1:hover::after {
+  transform: rotate(0deg);
+}
+
+.comp {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.product img {
+  max-width: 300px;
+  object-fit: cover;
+  object-position: 50%;
+  width: 18vw;
+  height: 24vw;
+}
+
+.product {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin-top: 3rem;
+}
+
+.product:hover img {
+  transform: scale(1.1);
+  transition: .8s;
+}
+
+.data {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.data a>p {
+  font-size: 24px !important;
+  font-family: 'orbit', sans-serif;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.price span {
+  font-family: 'Playball', cursive;
+  color: #3D5618;
+  text-transform: uppercase;
+}
+
+/* FOOTER
+===============================*/
+
 footer {
   border-top: 1px solid #d2d2d2;
   margin-top: 3rem;
+  margin-left: 200px;
 }
+
 footer .inner {
   padding: 20px 0;
+
 }
+
 footer .menu {
   display: flex;
   justify-content: center;
 }
+
 footer .menu li {
   position: relative;
 }
+
 footer .menu li::before {
   content: "";
   width: 3px;
@@ -593,9 +703,11 @@ footer .menu li::before {
   right: -1px;
   margin: auto;
 }
+
 footer .menu li:last-child::before {
   display: none;
 }
+
 footer .menu li a {
   font-family: 'Noto sans KR', sans-serif;
   display: block;
@@ -604,39 +716,49 @@ footer .menu li a {
   font-weight: 700;
   padding: 15px;
 }
+
 footer .menu li a {
   color: #3D5618
 }
+
 footer .btn-group {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
+
 footer .btn-group .btn {
   font-size: 12px;
   margin-right: 10px;
 }
+
 footer .btn-group .btn:last-child {
   margin-right: 0;
 }
+
 footer .info {
   margin-top: 10px;
   text-align: center;
 }
+
 footer .info span {
   margin-right: 20px;
   color: #999;
   font-size: 12px;
 }
+
 footer .info span:last-child {
   margin-right: 0;
 }
+
 footer .copyright {
   color: #999;
   font-size: 12px;
   text-align: center;
   margin-top: 12px;
+  display: block;
 }
+
 footer .logo {
   margin: 30px auto 0;
 }
